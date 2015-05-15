@@ -310,6 +310,11 @@ padding-bottom: 0.25rem;
     font-weight: 300;
     color: #838994;
 }
+
+h4 {
+  margin-bottom: 9px;
+}
+
 h5 {
     margin-left: 0.5rem;
 }
@@ -329,7 +334,7 @@ h5 {
 }
 @media (min-width: 75rem) {
     .content {
-        width: 60%;
+        width: 73%;
     }
 }
 
