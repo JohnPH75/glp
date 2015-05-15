@@ -380,6 +380,11 @@ a {
     color:inherit;
     display:block;
 }
+
+.portfolio:hover {
+  font-weight: bolder;
+  color: #000;
+}
 span.icon-stack {
     display:inline-block;
 }
