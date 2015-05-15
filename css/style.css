@@ -1,0 +1,448 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**
+ * HTML5 display-role reset for older browsers
+ */
+/**
+ * End of Reset
+ */
+/**
+ * Start of Custom Styles
+ */
+body {
+    /*background-color: LightGray;*/
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+div {
+    /*border: 1px solid Chocolate;*/
+}
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+:focus {
+    outline: none;
+}
+
+/**
+ * Navigation Section
+ */
+.top-navigation {
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 4.375rem;
+}
+.top-navigation .logo {
+    height: 4.375rem;
+}
+.top-navigation .links {
+    float: right;
+    color: black;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    text-shadow: 1px 1px 1px white;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: black;
+    font-weight: 500;
+    font: bold 1.3rem sans-serif;
+    text-shadow: 1px 1px 1px white;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+
+/**
+ * Introduction Section
+ */
+.introduction {
+    background-image: url('../img/water.gif');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+    font-family: copperplate, fantasy;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.introduction h1:hover {
+color: red;
+}
+
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+/**
+ * The buttons
+ */
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+.introduction .half {
+    width: 49%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+/**
+ * The Three Case Images
+ */
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+    float:left;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
+}
+
+/**
+ * Footer
+ */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 2px solid gray;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+  cursor: pointer;
+  color: #;
+  border: 2px solid;
+  border-width: 0.25rem;
+}
+.social .icons .facebook {
+    color: gray;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border-width: 0.25rem;
+}
+.social .icons .facebook:hover {
+    color: #060BB2;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border: 2px solid #060BB2;
+  border-width: 0.25rem;
+  text-shadow: 1px 1px 1px black;
+}
+.social .icons .github {
+color: gray;
+font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border-width: 0.25rem;
+}
+.social .icons .github:hover {
+    color: #B20537;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border: 2px solid #B20537;
+  border-width: 0.25rem;
+  text-shadow: 1px 1px 1px black;
+}
+.social .icons .pinterest {
+color: gray;
+font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border-width: 0.25rem;
+}
+.social .icons .pinterest:hover {
+    color: red;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border: 2px solid red;
+  border-width: 0.25rem;
+  text-shadow: 1px 1px 1px black;
+}
+.social .icons .codepen {
+  color: gray;
+font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border-width: 0.25rem;
+}
+.social .icons .codepen:hover {
+  color: #00B275;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border: 2px solid #00B275;
+  border-width: 0.25rem;
+  text-shadow: 1px 1px 1px black;
+}
+.social .icons .wordpress {
+    color: gray;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border-width: 0.25rem;
+}
+.social .icons .wordpress:hover {
+    color: #0071B2;
+    font-size: 1.5rem;
+padding-bottom: 0.25rem;
+  padding-top: 0.19rem;
+  border: 2px solid #0071B2;
+  border-width: 0.25rem;
+  text-shadow: 1px 1px 1px black;
+}
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+h5 {
+    margin-left: 0.5rem;
+}
+
+/**
+ * Responsive Design
+ */
+@media (min-width: 48rem) {
+    .content {
+        width: 46rem;
+    }
+}
+@media (min-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
+}
+@media (min-width: 75rem) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+/* Standard syntax */ 
+@keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+
+
+/**
+ * button
+ */
+button {
+    width: 9.688rem;
+    background-color: #FFFFFF;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-size: 1.3rem;
+}
+button:hover {
+    background-color: ;
+    border-color: #cf3d0e;
+    cursor: pointer;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
+.buttons a:hover {
+  cursor: pointer;
+  color: ;
+}
+
+body {
+    color: #00000;
+}
+a {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+span.icon-stack {
+    display:inline-block;
+}
+div.buttons {
+    position: relative;
+}
+ 
+ul li {
+  font: bold 1rem sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #;
+  cursor: (pointer);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:(hover) (description) {
+  background: ;
+  color: gray;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li (sub-menu){
+
+}
+ul li ul li:hover { background: #FFFFFF; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+p a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-top: 1rem;
+  color: gray;
+}
+p a:hover {
+  cursor: pointer;
+  color: #FFCF65;
+  text-shadow: 1px 1px 1px black;
+}
